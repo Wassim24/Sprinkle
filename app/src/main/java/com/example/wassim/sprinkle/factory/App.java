@@ -23,7 +23,8 @@ public class App extends Application
 
         DevOpenHelper helper = new DevOpenHelper(this, "plantes-db");
         Database db = helper.getWritableDb();
-        daoSession = new DaoMaster(db).newSession();
+        DaoMaster dm = new DaoMaster(db);
+        daoSession = dm.newSession();
     }
 
     public DaoSession getDaoSession()

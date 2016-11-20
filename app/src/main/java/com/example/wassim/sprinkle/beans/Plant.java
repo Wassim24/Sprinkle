@@ -1,13 +1,12 @@
 package com.example.wassim.sprinkle.beans;
 
-import android.support.annotation.Nullable;
+import com.example.wassim.sprinkle.extras.DateHelper;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.NotNull;
 
 import org.greenrobot.greendao.annotation.Generated;
-import org.greenrobot.greendao.annotation.Property;
 
 import java.util.Date;
 
@@ -21,9 +20,9 @@ public class Plant {
     @Id
     private Long id;
 
-    private long createdAt;
-    private long finishesAt;
     private long lastWateringAt;
+    private long createdAt;
+    private String picturePath;
 
     @NotNull
     private String name;
@@ -33,15 +32,26 @@ public class Plant {
         this.id = id;
         this.name = name;
         this.wateringFrequency = wateringFrequency;
+        this.lastWateringAt = new Date().getTime();
+        this.createdAt = this.lastWateringAt;
     }
 
-    @Generated(hash = 943005619)
-    public Plant(Long id, long createdAt, long finishesAt, long lastWateringAt,
+    public Plant(Long id, String name, int wateringFrequency, int picturePath) {
+        this.id = id;
+        this.name = name;
+        this.wateringFrequency = wateringFrequency;
+        this.lastWateringAt = new Date().getTime();
+        this.createdAt = this.lastWateringAt;
+        this.picturePath = "plant_"+picturePath;
+    }
+
+    @Generated(hash = 1773069330)
+    public Plant(Long id, long lastWateringAt, long createdAt, String picturePath,
             @NotNull String name, int wateringFrequency) {
         this.id = id;
-        this.createdAt = createdAt;
-        this.finishesAt = finishesAt;
         this.lastWateringAt = lastWateringAt;
+        this.createdAt = createdAt;
+        this.picturePath = picturePath;
         this.name = name;
         this.wateringFrequency = wateringFrequency;
     }
@@ -58,6 +68,14 @@ public class Plant {
         this.id = id;
     }
 
+    public long getLastWateringAt() {
+        return this.lastWateringAt;
+    }
+
+    public void setLastWateringAt(long lastWateringAt) {
+        this.lastWateringAt = lastWateringAt;
+    }
+
     public long getCreatedAt() {
         return this.createdAt;
     }
@@ -66,20 +84,12 @@ public class Plant {
         this.createdAt = createdAt;
     }
 
-    public long getFinishesAt() {
-        return this.finishesAt;
+    public String getPicturePath() {
+        return this.picturePath;
     }
 
-    public void setFinishesAt(long finishesAt) {
-        this.finishesAt = finishesAt;
-    }
-
-    public long getLastWateringAt() {
-        return this.lastWateringAt;
-    }
-
-    public void setLastWateringAt(long lastWateringAt) {
-        this.lastWateringAt = lastWateringAt;
+    public void setPicturePath(String picturePath) {
+        this.picturePath = picturePath;
     }
 
     public String getName() {

@@ -6,24 +6,23 @@
     android:padding="22dp"
     android:background="@drawable/bg_plant_row">
 
-    <ImageView
-        android:layout_width="12dp"
-        android:layout_height="12dp"
-        android:src="@mipmap/ic_launcher"
-        android:background="@null"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/plant_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Type plante"
         android:paddingLeft="22dp"
         android:paddingRight="22dp"/>
 
     <TextView
+        android:id="@+id/watering_date"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quand"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
