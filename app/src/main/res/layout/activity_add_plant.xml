@@ -10,7 +10,6 @@
         android:id="@+id/add_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/lnd"
         android:scaleType="centerCrop"/>
 
     <include
@@ -30,6 +29,13 @@
             android:hint="@string/hint_plant_name"
             android:layout_margin="12dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_watering_fq"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="22dp"/>
+
         <NumberPicker
             android:id="@+id/input_plant_fq"
             android:layout_width="match_parent"
@@ -44,7 +50,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         app:fabSize="normal"
-        app:srcCompat="@android:drawable/ic_menu_camera"
+        app:srcCompat="@drawable/ic_action_picture"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"

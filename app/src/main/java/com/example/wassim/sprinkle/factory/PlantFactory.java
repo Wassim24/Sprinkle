@@ -6,19 +6,16 @@ import com.example.wassim.sprinkle.beans.DaoSession;
 import com.example.wassim.sprinkle.beans.PlantDao;
 
 /**
- * Created by wassim on 11/20/16.
+ *  Singleton permettant d'avoir accés à la DAO pour gérer l'entité Plant
  */
 public class PlantFactory {
 
     private static PlantFactory ourInstance;
     private PlantDao plantDao;
 
-
     public static PlantFactory getInstance() {
         return ourInstance;
     }
-
-    public PlantFactory() {}
 
     public PlantFactory(Application app) {
         ourInstance = this;

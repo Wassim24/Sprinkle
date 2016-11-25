@@ -7,25 +7,15 @@
     <string name="plant_add_date_title">Date d\'ajout</string>
     <string name="next_water_date_title">Prochain arrosage</string>
     <string name="previous_water_date_title">Dernier arrosage</string>
-    <string name="action_settings">Settings</string>
     <string name="title_activity_add_plant">Ajouter une plante</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
     <string name="hint_plant_name">Entrez le nom de la plante</string>
-    <string name="plant_picture">Prendre une photo de la plante</string>
-    <string name="save_plant">Enregistrer la plante</string>
     <string name="validate_plant">Finaliser l\'ajout de la plante</string>
-    <string name="took_picture_success">La photo a été prise !</string>
     <string name="took_picture_failure">La photo na pu etre prise !</string>
+    <string name="edit_plant">Editer la plante</string>
+    <string name="water_frequency">Fréquence d\'arrosage</string>
+    <string name="delete_plants">Supprimer les plantes</string>
+    <string name="label_watering_fq">Choisissez la fréquence d\'arrosage</string>
+
 </resources>

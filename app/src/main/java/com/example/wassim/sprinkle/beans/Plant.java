@@ -1,33 +1,26 @@
 package com.example.wassim.sprinkle.beans;
 
-import com.example.wassim.sprinkle.extras.DateHelper;
-
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.NotNull;
 
-import org.greenrobot.greendao.annotation.Generated;
-
 import java.util.Date;
-
-/**
- * Created by wassim on 11/19/16.
- */
 
 @Entity
 public class Plant {
 
+    // On liste l'ensemble des attributs de l'entity
     @Id
     private Long id;
-
     private long lastWateringAt;
     private long createdAt;
     private String picturePath;
-
     @NotNull
     private String name;
     private int wateringFrequency;
 
+    // Les différents constructeurs pour l'entity
     public Plant(Long id, String name, int wateringFrequency) {
         this.id = id;
         this.name = name;
@@ -36,13 +29,13 @@ public class Plant {
         this.createdAt = this.lastWateringAt;
     }
 
-    public Plant(Long id, String name, int wateringFrequency, int picturePath) {
+    public Plant(Long id, String name, int wateringFrequency, String picturePath) {
         this.id = id;
         this.name = name;
         this.wateringFrequency = wateringFrequency;
         this.lastWateringAt = new Date().getTime();
         this.createdAt = this.lastWateringAt;
-        this.picturePath = "plant_"+picturePath;
+        this.picturePath = picturePath;
     }
 
     @Generated(hash = 1773069330)
@@ -60,6 +53,7 @@ public class Plant {
     public Plant() {
     }
 
+    // Les différents getters et setters
     public Long getId() {
         return this.id;
     }

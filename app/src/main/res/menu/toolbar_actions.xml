@@ -4,9 +4,25 @@
 
     <item
         android:id="@+id/add_action"
-        android:icon="@android:drawable/ic_input_add"
+        android:icon="@drawable/ic_action_add"
         android:title="@string/ajouter_action"
-        app:showAsAction="always">
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/date_picker"
+        android:title="Choisir une date"
+        android:icon="@drawable/ic_action_calendar"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/delete_action"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/delete_plants"
+        app:showAsAction="collapseActionView">
+
     </item>
 
 </menu>

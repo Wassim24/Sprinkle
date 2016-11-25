@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.wassim.sprinkle.app.PlantDetails"
-    tools:showIn="@layout/activity_plant_details">
+    tools:showIn="@layout/activity_plant_details"
+    android:layout_marginTop="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,12 +34,30 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/water_frequency"
+            android:textStyle="normal|bold"
+            android:paddingTop="22dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/detail_water_fq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:text="zrelfjjlze"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/plant_add_date_title"
             android:textStyle="normal|bold"
             android:paddingTop="22dp"
             android:paddingLeft="22dp"
             android:paddingRight="22dp"
             android:paddingBottom="16dp" />
+
 
         <TextView
             android:id="@+id/detail_plant_date"

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.wassim.sprinkle.app.MainActivity">
@@ -10,12 +9,12 @@
         android:id="@+id/app_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lnd" />
+        android:scaleType="centerCrop" />
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
+
 
     <com.example.wassim.sprinkle.widgets.GardenRecyclerView
         android:id="@+id/plant_list"
