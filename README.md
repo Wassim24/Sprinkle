@@ -9,5 +9,6 @@ The minimum SDK used is level 16 and the developping phone was under Android KK 
 
 # Identified bugs
 App may crash for the first time you add a photo for a plant
+
 Details Activity does not update right away after editing
 
